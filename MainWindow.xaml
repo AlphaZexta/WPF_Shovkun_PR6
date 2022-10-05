@@ -1,0 +1,18 @@
+﻿<Window x:Class="WPF_Shovkun_PR6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Shovkun_PR6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas>
+            <Label Content="РЕГИСТРАЦИЯ" FontSize="25" FontWeight="Bold" Canvas.Left="300"/>
+            <Label Content="Логин" Canvas.Left="250" Canvas.Top="50"/>
+            <TextBox Width="200" Height="30" Canvas.Left="300" Canvas.Top="50"/>
+            <Label Content="Пароль" Canvas.Left="240" Canvas.Top="90"/>
+            <TextBox Width="200" Height="30" Canvas.Left="300" Canvas.Top="90"/>
+        </Canvas>
+    </Grid>
+</Window>
