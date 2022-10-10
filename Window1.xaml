@@ -6,7 +6,16 @@
         xmlns:local="clr-namespace:WPF_Shovkun_PR6"
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+   <Grid>
+      <Canvas>
+        <Calendar x:Name="calendar1" FirstDayOfWeek="Monday" Canvas.Left="300" Canvas.Top="100" MouseDoubleClick="calendar1_MouseDoubleClick"
+        SelectedDatesChanged="calendar1_SelectedDatesChanged">
+                <Calendar.BlackoutDates>
+                    <CalendarDateRange Start="10/1/2022" End="10/9/2022"></CalendarDateRange>
+                </Calendar.BlackoutDates>
+            </Calendar>
+            <Label Content="ВЫБЕРИТЕ ДАТУ ПОЕЗДКИ" HorizontalAlignment="Center" FontSize="25" Canvas.Left="235"/>
+            <Label Content="*двойной клик для подтверждения" Canvas.Top="280" Canvas.Left="290"/>
+        </Canvas>    
+   </Grid>
 </Window>

@@ -23,24 +23,18 @@ namespace WPF_Shovkun_PR6
         public MainWindow()
         {
             InitializeComponent();
-            Properties.Settings.Default.Save();  
+            Properties.Settings.Default.Save();
         }
 
         private void Reg_Click(object sender, RoutedEventArgs e)
         {
             Properties.Settings.Default.Save();
+            
+            Window1 window1 = new Window1();
+            window1.Show();
+            this.Close();
 
-            int n = 0;
 
-            switch (n)
-            {
-                case 0:
-                    if (n == 0) MessageBox.Show("Текстовые поля не заполнены");
-                    break;
-                default:
-                    Window1.Show;
-                    break;
-            }
         }
     }
 }

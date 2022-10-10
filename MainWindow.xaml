@@ -9,7 +9,7 @@
     <Grid>
         <Canvas>
             <Label Content="РЕГИСТРАЦИЯ" FontSize="25" FontWeight="Bold" Canvas.Left="300"/>
-            <Label Content="Логин" Canvas.Left="250" Canvas.Top="50"/>
+            <Label Content="Электронная почта" Canvas.Left="180" Canvas.Top="50"/>
             <TextBox x:Name="T1" Width="200" Height="30" Canvas.Left="300" Canvas.Top="50"/>
             <Label x:Name="T2" Content="Пароль" Canvas.Left="240" Canvas.Top="90"/>
             <TextBox Width="200" Height="30" Canvas.Left="300" Canvas.Top="90"/>

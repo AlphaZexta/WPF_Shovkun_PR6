@@ -23,5 +23,18 @@ namespace WPF_Shovkun_PR6
         {
             InitializeComponent();
         }
+
+        private void calendar1_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DateTime? selectedDate = calendar1.SelectedDate;
+
+            MessageBox.Show(selectedDate.Value.Date.ToShortDateString());
+        }
+
+        private void calendar1_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("Даты выбраны. Вам на почту отправлена ссылка на переход на сайт для оплаты поездки");
+            this.Close();
+        }
     }
 }
